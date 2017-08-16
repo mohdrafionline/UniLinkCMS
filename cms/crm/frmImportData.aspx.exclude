@@ -1,0 +1,28 @@
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/crm/main.master" AutoEventWireup="false" CodeFile="frmImportData.aspx.vb" Inherits="crm_frmImportData" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+
+    <div class="content-wrapper" style="min-height: 946px;">
+        <section class="content-header">
+            <h1>Import Data
+                <small>CMS</small>
+            </h1>
+            <ol class="breadcrumb">
+        </section>
+        <section class="content">
+
+            <div class="row">
+                <div class="col-sm-4">
+                    Select File
+                </div>
+                <div class="col-sm-8">
+                    <asp:scriptmanager runat="server" id="scriptmanager"></asp:scriptmanager>
+       <ajaxtoolkit:ajaxfileupload width="400px" id="AjaxFileUpload1" runat="server" throbberid="myThrobber" onuploadcomplete="AjaxFileUpload1_UploadComplete" maximumnumberoffiles="10" allowedfiletypes=""></ajaxtoolkit:ajaxfileupload>
+                </div>
+            </div>
+        </section>
+    </div>
+</asp:Content>
+
